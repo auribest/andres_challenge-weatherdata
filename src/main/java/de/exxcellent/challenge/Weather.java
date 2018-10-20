@@ -12,4 +12,7 @@ public class Weather {
   private ArrayList<String> maxTempsOfMonth = new ArrayList<>();
   //ArrayList to save all minimum temperatures of each day of the month.
   private ArrayList<String> minTempsOfMonth = new ArrayList<>();
+
+  //Day with the smallest temperature spread of the month.
+  public int smallestTempSpread = 0;
 }
