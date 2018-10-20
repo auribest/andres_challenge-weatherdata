@@ -15,4 +15,11 @@ public class Weather {
 
   //Day with the smallest temperature spread of the month.
   public int smallestTempSpread = 0;
+
+  /**
+   * Method to get the day with the smallest temperature spread of the month.
+   */
+  public void minTempSpread() {
+    
+  }
 }
