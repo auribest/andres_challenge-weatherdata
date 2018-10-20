@@ -30,6 +30,17 @@ public class Weather {
       String line;
       //Difines all elements of a line.
       String[] elements;
+
+      //While there is a line.
+      while ((line = fileReader.readLine()) != null) {
+        //Remove the commas.
+        elements = line.split(",");
+
+        //Add every second element of a line to the list and remove all whitespaces.
+        maxTempsOfMonth.add(elements[1].trim());
+        //Add every third element of a line to the list and remove all whitespaces.
+        minTempsOfMonth.add(elements[2].trim());
+      }
     } catch (Exception ex) {
       ex.printStackTrace();
     }
