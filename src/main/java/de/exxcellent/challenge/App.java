@@ -17,11 +17,13 @@ public final class App {
   public static void main(String... args) {
 
     Weather weather = new Weather();
+    Football football = new Football();
 
     weather.minTempSpread();
+    football.minAbsoluteDiffOfGoals();
 
     int dayWithSmallestTempSpread = weather.smallestTempSpread;
-    String teamWithSmallesGoalSpread = "A good team";
+    String teamWithSmallesGoalSpread = football.smallestAbsoluteGoalDiff;
 
     System.out.printf("Day with smallest temperature spread : %s%n", dayWithSmallestTempSpread);
     System.out.printf("Team with smallest goal spread       : %s%n", teamWithSmallesGoalSpread);
