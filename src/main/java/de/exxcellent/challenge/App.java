@@ -16,7 +16,11 @@ public final class App {
    */
   public static void main(String... args) {
 
-    String dayWithSmallestTempSpread = "Someday";
+    Weather weather = new Weather();
+
+    weather.minTempSpread();
+
+    int dayWithSmallestTempSpread = weather.smallestTempSpread;
     String teamWithSmallesGoalSpread = "A good team";
 
     System.out.printf("Day with smallest temperature spread : %s%n", dayWithSmallestTempSpread);
