@@ -32,6 +32,19 @@ public class Football {
       String line;
       //Difines all elements of a line.
       String[] elements;
+
+      //While there is a line.
+      while ((line = fileReader.readLine()) != null) {
+        //Remove the commas.
+        elements = line.split(",");
+
+        //Add every first element of a line to the list and remove all whitespaces.
+        teamNames.add(elements[0].trim());
+        //Add every sixth element of a line to the list and remove all whitespaces.
+        goals.add(elements[5].trim());
+        //Add every seventh element of a line to the list and remove all whitespaces.
+        goalsAllowed.add(elements[6].trim());
+      }
     } catch (Exception ex) {
       ex.printStackTrace();
     }
