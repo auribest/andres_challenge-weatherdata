@@ -3,6 +3,7 @@ package de.exxcellent.challenge;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Weather {
   //Source of the weather file.
@@ -48,6 +49,9 @@ public class Weather {
         tempSpreadsOfMonth.add(
             Integer.parseInt(maxTempsOfMonth.get(i)) - Integer.parseInt(minTempsOfMonth.get(i)));
       }
+
+      //Search for smallest int in the list, take its index and add 1.
+      smallestTempSpread = (tempSpreadsOfMonth.indexOf(Collections.min(tempSpreadsOfMonth)) + 1);
     } catch (Exception ex) {
       ex.printStackTrace();
     }
