@@ -14,4 +14,7 @@ public class Football {
   private ArrayList<String> goals = new ArrayList();
   //ArrayList to save all goals allowed of each team.
   private ArrayList<String> goalsAllowed = new ArrayList<>();
+
+  //Team with smallest absolute difference between goals and goals allowed.
+  public String smallestAbsoluteGoalDiff = null;
 }
