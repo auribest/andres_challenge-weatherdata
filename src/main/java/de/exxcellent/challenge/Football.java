@@ -27,6 +27,11 @@ public class Football {
     try {
       //The file reader
       BufferedReader fileReader = new BufferedReader(new FileReader(footballFile));
+
+      //Defines a line of the football file.
+      String line;
+      //Difines all elements of a line.
+      String[] elements;
     } catch (Exception ex) {
       ex.printStackTrace();
     }
