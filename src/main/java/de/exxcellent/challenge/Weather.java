@@ -1,5 +1,7 @@
 package de.exxcellent.challenge;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Weather {
@@ -20,6 +22,11 @@ public class Weather {
    * Method to get the day with the smallest temperature spread of the month.
    */
   public void minTempSpread() {
-    
+    try {
+      //The file reader
+      BufferedReader fileReader = new BufferedReader(new FileReader(weatherFile));
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
   }
 }
