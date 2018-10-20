@@ -45,6 +45,21 @@ public class Football {
         //Add every seventh element of a line to the list and remove all whitespaces.
         goalsAllowed.add(elements[6].trim());
       }
+
+      for (int i = 1; i < goals.size(); i++) {
+        //Take a value of the goalsList and substract the corresponding value of the
+        // goalsAllowedList.
+        int absoluteDiffOfGoalsVariable = (
+            Integer.parseInt(goals.get(i)) - Integer.parseInt(goalsAllowed.get(i)));
+
+        //If the value is nagative multiply it by -1 and add it to the list,
+        // else just add it to de list.
+        if (absoluteDiffOfGoalsVariable < 0) {
+          absoluteDiffOfGoals.add((absoluteDiffOfGoalsVariable) * (-1));
+        } else {
+          absoluteDiffOfGoals.add(absoluteDiffOfGoalsVariable);
+        }
+      }
     } catch (Exception ex) {
       ex.printStackTrace();
     }
