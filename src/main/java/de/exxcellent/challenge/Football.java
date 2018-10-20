@@ -1,5 +1,7 @@
 package de.exxcellent.challenge;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Football {
@@ -22,6 +24,11 @@ public class Football {
    * Method to get the team with the smallest absolute difference between goals and goals allowed.
    */
   public void minAbsoluteDiffOfGoals() {
-    
+    try {
+      //The file reader
+      BufferedReader fileReader = new BufferedReader(new FileReader(footballFile));
+    } catch (Exception ex) {
+      ex.printStackTrace();
+    }
   }
 }
