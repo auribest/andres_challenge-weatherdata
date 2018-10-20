@@ -41,6 +41,13 @@ public class Weather {
         //Add every third element of a line to the list and remove all whitespaces.
         minTempsOfMonth.add(elements[2].trim());
       }
+
+      for (int i = 1; i < maxTempsOfMonth.size(); i++) {
+        //Take a value of the maxTempsList, substract the corresponding value of the minTempsList
+        // and add it to the TempSpreadsList.
+        tempSpreadsOfMonth.add(
+            Integer.parseInt(maxTempsOfMonth.get(i)) - Integer.parseInt(minTempsOfMonth.get(i)));
+      }
     } catch (Exception ex) {
       ex.printStackTrace();
     }
