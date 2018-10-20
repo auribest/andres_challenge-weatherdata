@@ -25,6 +25,11 @@ public class Weather {
     try {
       //The file reader
       BufferedReader fileReader = new BufferedReader(new FileReader(weatherFile));
+
+      //Defines a line of the weather file.
+      String line;
+      //Difines all elements of a line.
+      String[] elements;
     } catch (Exception ex) {
       ex.printStackTrace();
     }
