@@ -3,6 +3,7 @@ package de.exxcellent.challenge;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Football {
   //Source of the football file.
@@ -60,6 +61,11 @@ public class Football {
           absoluteDiffOfGoals.add(absoluteDiffOfGoalsVariable);
         }
       }
+
+      //Search for smallest int in the list, take its index and add 1
+      // and search for the team name in the teamNamesList using that number.
+      smallestAbsoluteGoalDiff = teamNames.get((absoluteDiffOfGoals.indexOf(
+          Collections.min(absoluteDiffOfGoals))) + 1);
     } catch (Exception ex) {
       ex.printStackTrace();
     }
