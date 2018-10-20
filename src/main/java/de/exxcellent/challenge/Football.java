@@ -17,4 +17,11 @@ public class Football {
 
   //Team with smallest absolute difference between goals and goals allowed.
   public String smallestAbsoluteGoalDiff = null;
+
+  /**
+   * Method to get the team with the smallest absolute difference between goals and goals allowed.
+   */
+  public void minAbsoluteDiffOfGoals() {
+    
+  }
 }
