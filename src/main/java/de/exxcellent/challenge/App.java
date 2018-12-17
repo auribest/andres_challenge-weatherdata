@@ -22,7 +22,7 @@ public final class App {
     weather.minTempSpread();
     football.minAbsoluteDiffOfGoals();
 
-    int dayWithSmallestTempSpread = weather.smallestTempSpread;
+    int dayWithSmallestTempSprea = weather.smallestTempSpread;
     String teamWithSmallesGoalSpread = football.smallestAbsoluteGoalDiff;
 
     System.out.printf("Day with smallest temperature spread : %s%n", dayWithSmallestTempSpread);
